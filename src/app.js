@@ -68,6 +68,7 @@ app.get("/weather", async function(req, res){
         })
     }
     catch(error) {
+        console.log(error)
         res.send({
             error: "Provide valid address"
         })

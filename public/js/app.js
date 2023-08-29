@@ -1,5 +1,3 @@
-console.log("Client side js loaded");
-
 async function fetchData(location1) {
     var location = location1.toLowerCase().split(' ');
     for (var i = 0; i < location.length; i++) {
