@@ -8,7 +8,7 @@ async function fetchData(location1) {
     let loc = location.join(' ');
     console.log(loc);
     try {
-        const res = await fetch(`/weather?address=${loc}`);
+        const res = await fetch("/weather?address=" + loc);
         const data = await res.json();
         if (!data.error) {
             m1.textContent = data.location;
