@@ -1,8 +1,14 @@
 console.log("Client side js loaded");
 
-async function fetchData(location) {
+async function fetchData(location1) {
+    var location = location1.toLowerCase().split(' ');
+    for (var i = 0; i < location.length; i++) {
+        location[i] = location[i].charAt(0).toUpperCase() + location[i].substring(1);
+    }
+    let loc = location.join(' ');
+    console.log(loc)
     try {
-        const res = await fetch("http://localhost:3000/weather?address=" + location)
+        const res = await fetch(`/weather?address=${loc}`);
         const data = await res.json();
         if (!data.error) {
             m1.textContent = data.location;
