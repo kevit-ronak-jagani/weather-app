@@ -6,6 +6,7 @@ async function fetchData(location1) {
         location[i] = location[i].charAt(0).toUpperCase() + location[i].substring(1);
     }
     let loc = location.join(' ');
+    console.log(loc);
     try {
         const res = await fetch(`/weather?address=${loc}`);
         const data = await res.json();
