@@ -19,9 +19,10 @@ const request = require("postman-request")
 //         }
 //     })
 // }
-const geocode = function (location) {
+const geocode = async function (location) {
+
     return new Promise((resolve, reject) => {
-        const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + location + ".json?limit=1&access_token=pk.eyJ1Ijoicm9uYWsyMSIsImEiOiJjbGxxOGczMnAwYzBqM3VucmwzaWFvamxtIn0.ONgiQUPf1tAOCDzxNC5xSg";
+        const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + location + ".json?limit=1&access_token=pk.eyJ1Ijoicm9uYWsyMSIsImEiOiJjbGxyaXRvZ3gwbW5xM3FwcHV5NHpvMWN3In0.p4IeeR2VS3eGkIkQLLljZQ";
 
         request({ url: url, json: true }, (error, { body }) => {
             console.log(body);
