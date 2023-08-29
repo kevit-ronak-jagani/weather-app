@@ -24,6 +24,7 @@ const geocode = function (location) {
         const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + location + ".json?limit=1&access_token=pk.eyJ1Ijoicm9uYWsyMSIsImEiOiJjbGxxOGczMnAwYzBqM3VucmwzaWFvamxtIn0.ONgiQUPf1tAOCDzxNC5xSg";
 
         request({ url: url, json: true }, (error, { body }) => {
+            console.log(body);
             if (error) {
                 reject('Unable to connect to location services!')
             }
