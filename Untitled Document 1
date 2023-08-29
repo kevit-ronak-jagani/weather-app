@@ -1,0 +1,26 @@
+
+Learned how to inspect into chrome using vs code and chrome://inspect.
+use inspect after node keyword in CLI..e.g. node inspect app.js.
+
+postman-request module in node js with error handling
+fetch operations using postman-request with weather-stack api and map-box, using callback functions.
+fetched weather data like latitude-longitude ,location using above apis.
+
+Object destructuring and property shorthand syntax.
+
+Converted callback chaining into async/await syntax.
+
+request using http/https module to fetch data.
+
+Express js:-
+
+Express js is a web framework of node js.It allows to dynamically render HTML pages based on passing arguments to templates.
+Express is fast, asynchronous and has MVC like architecture.
+template engines are used to render pages with dynamic content on the server-side.
+Handlebars is template engine used to create reusable webpage templates.
+Static and dynamic Pages with Templating.
+Created weather home page, about and help page
+Error pages for 404.
+Fetch to data from api with query string.
+accessing geocode and forecast API and showed on our application using inputed location by the user.
+Styling the application.
