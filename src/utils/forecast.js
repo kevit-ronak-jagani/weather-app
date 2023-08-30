@@ -13,16 +13,3 @@ const forecast = async (latitude, longitude) => {
     }
 };
 module.exports = forecast
-// const forecast = (latitude, longitude, callback) => {
-//     const url = "http://api.weatherstack.com/current?access_key=e1417c2a80b9a9eafadafe5f3df23dc1&query=" + latitude + "," + longitude + "&units=f";
-
-//     request({ url: url, json: true }, (error, response) => {
-//         if (error) {
-//             callback('Unable to connect to weather service!', undefined)
-//         } else if (response.body.error) {
-//             callback('Location not found.', undefined)
-//         } else {
-//             callback(undefined, 'It is currently ' + response.body.current.temperature + ' degrees out. There is a ' + response.body.current.precip + ' % chance of rain.')
-//         }
-//     })
-// }

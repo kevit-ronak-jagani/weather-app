@@ -17,6 +17,7 @@ app.set("views", viewsPath);
 hbs.registerPartials(partialsPath)
 
 // setup static directory to serve
+// To define a middleware function, we call app.use()
 app.use(express.static(publicDir));
 
 app.get("", (req, res) => {
@@ -42,7 +43,7 @@ app.get("/about", (req, res) => {
     });
 });
 
-app.get("/weather", async function(req, res){
+app.get("/weather", async function (req, res) {
     if (!req.query.address) {
         return res.send({
             error: "You must provide an address"
@@ -51,7 +52,7 @@ app.get("/weather", async function(req, res){
     try {
         console.log(req.query.address);
         const data = await geocode(req.query.address);
-        
+
         const forecastData = await forecast(data.latitude, data.longitude);
         const loc = data.location;
         res.send({
@@ -60,7 +61,7 @@ app.get("/weather", async function(req, res){
             address: req.query.address
         })
     }
-    catch(error) {
+    catch (error) {
         console.log(error)
         res.send({
             error: "Provide valid address"
