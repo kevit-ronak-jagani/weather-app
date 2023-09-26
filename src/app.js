@@ -24,7 +24,7 @@ app.get("", (req, res) => {
     // res.send("Hello express");
     res.render("index", {
         title: "Weather App",
-        name: "Ronak"
+        name: "Ronak Jagani"
     });
 });
 
