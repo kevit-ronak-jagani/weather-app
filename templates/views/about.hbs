@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
 
-<body>
-    {{!-- <h1>{{title}}</h1> --}}
-    <div class="content">
-        {{>header }}
-        {{!-- <h3>Created by: {{name}}</h3> --}}
-        <img class="kevit" src="/Kevit (1).png" alt="kevit" width="130px" style="margin-top: 30px;">
-    </div>
-    {{>footer}}
-</body>
+    <body>
+
+        <div class="content">
+            {{>header }}
+            <main class="about-container">
+                <section class="about-section">
+                    <h1>About the Weather App</h1>
+                    <p>The Weather App is a user-friendly web application
+                        created by Ronak Jagani. It provides real-time weather
+                        forecasts for locations worldwide, offering accurate and
+                        up-to-date information to help you plan your day.</p>
+                </section>
+
+                <section class="creator-section">
+                    <h2>About the Developer</h2>
+                    <img class="kevit" src="/person.png" alt="kevit"
+                        width="130px" style="margin-top: 30px;">
+                    <p>Ronak Jagani is a Backend developer intern and the solo
+                        developer behind the Weather App. With a passion for web
+                        development, Ronak designed and built the entire
+                        application, including both the backend and frontend
+                        components.</p>
+                </section>
+
+                <section class="mission-section">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to provide users with accurate and easily
+                        accessible weather information. We are dedicated to
+                        making the Weather App a valuable tool for planning
+                        daily activities and staying informed about weather
+                        conditions worldwide.</p>
+                </section>
+            </div>
+        </main>
+        {{>footer}}
+    </body>
 
 </html>

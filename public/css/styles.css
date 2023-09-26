@@ -3,7 +3,7 @@ body {
     color: rgb(30, 34, 51);
     padding: 25px;
     max-width: 700px;
-    margin: 100px auto;
+    margin: 60px auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
@@ -31,13 +31,14 @@ header a {
 footer {
     color: rgb(39, 51, 39);
     margin-top: 30px;
+    font-size: 17px;
     border-top: 1px solid rgb(110, 106, 96);
 }
 
-.content>p {
+.main-container>p {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(89, 90, 139);
+    color: #2373a1;
     font-weight: 800;
 }
 
@@ -46,6 +47,7 @@ input {
     padding: 8px;
     width: 230px;
 }
+
 ::placeholder {
     font-size: 15px;
     color: rgb(81, 81, 85);
@@ -57,4 +59,100 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+/* Add these styles for the Help page */
+.help-container,
+.about-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-container {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px auto;
+}
+
+.help-section {
+    margin-bottom: 30px;
+}
+
+.help-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.help-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.help-section,
+.creator-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.help-section li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.help-section a {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.help-section a:hover {
+    color: #0056b3;
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section,
+.creator-section,
+.mission-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.creator-section,
+.mission-section {
+    margin-bottom: 30px;
+}
+
+.creator-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.creator-section li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.mission-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
 }

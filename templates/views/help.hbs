@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Help</title>
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="content">
-            {{>header}}
-        </div>
+    <div class="content">
+        {{>header}}
+        
+        <main class="help-container">
+            <section class="help-section">
+                <h1>Welcome to the Weather App Help Center</h1>
+            </section>
+
+            <section class="help-section">
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <ul>
+                    <li>
+                        <h3>How do I search for weather information?</h3>
+                        <p>To search for weather information, simply enter the location you want to know the weather for in the search bar and press 'Search.'</p>
+                    </li>
+                    <li>
+                        <h3>I'm getting an 'Invalid location' error. What should I do?</h3>
+                        <p>If you receive this error, please double-check the spelling of the location and try again. Ensure that you've entered both the city name and country.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="help-section">
+                <h2>Search Tips</h2>
+                <p>For accurate results, try entering the city name and country when searching for weather information.</p>
+            </section>
+
+            <section class="help-section">
+                <h2>Contact Information</h2>
+                <p>If you need further assistance, please don't hesitate to contact us:</p>
+                <p>Email: ronakjagani21@gmail.com</p>
+
+            </section>
+        </main>
         {{>footer}}
-    </body>
+    </div>
+</body>
 
 </html>
